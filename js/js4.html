@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .oculto{
+        display: none;
+    }
+</style>
+<body>
+    <button id="menuBtn">menu</button>
+    <nav id="menu" class="oculto">
+        <ul>
+            <li>home</li>
+            <li>sobre</li>
+            <li>contato</li>
+        </ul>
+    </nav>
+    <script>
+        var botaoMenu = document.getElementById("menuBtn")
+        var menu = document.getElementById("menu")
+
+        botaoMenu.addEventListener("click", function(){
+            menu.classList.toggle("oculto")
+        })
+    </script>
+</body>
+
+</html>
