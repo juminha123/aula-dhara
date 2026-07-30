@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .destaque{
+        background-color: yellow;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <p id="mensagem" class="destaque"> texto com destaque</p>
+    <button id="remover">remover destaque</button>
+    <script>
+        var paragrafo = document.getElementById("mensagem")
+        var botao = document.getElementById("remover")
+        botao.addEventListener("click", function(){
+            paragrafo.classList.remove("destaque")
+        })
+    </script>
+</body>
+</html>

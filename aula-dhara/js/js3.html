@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aliceblue;
+        color: black;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .escuro{
+        background-color: black;
+        color: aliceblue;
+    }
+</style>
+<body>
+    <button id="botao"> alterar tema</button>
+    <h1>asertyuiol,mnbvcdrtyuiol,mnbvfdrtyuioiuytresdcvbjkoi7trdx</h1>
+    <script>
+        var botao = document.getElementById("botao")
+        var corpo = document.body
+
+        botao.addEventListener("click", function(){
+            corpo.classList.toggle("escuro")
+        })
+    </script>
+</body>
+</html>
