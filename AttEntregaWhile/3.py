@@ -1,7 +1,8 @@
 contador = 0
-indice = 1
-
-while indice < len(contador):
-        numero= int(input("digite um numero: "))
-        contador += 1 
-        indice += 1
+numero = int(input("digite o primeiro numero"))
+while numero >= 0:
+    numero = int(input("Digite um número: "))
+    if numerp>= 0:
+            contador = contador + 1 
+    print(contador)
+        
