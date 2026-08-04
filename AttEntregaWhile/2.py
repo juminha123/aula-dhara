@@ -1,14 +1,8 @@
-na = int(input("digite o primeiro numero"))
-nb = int(input("digite o segundo numero: "))
-contador = 1
-while contador >= 1:
-    cal = na + nb
-    if contador >= 1:
-        cal = na + nb
-        print(cal)           
-    else:
-        print("numero invalido") 
-    print(contador)
-    contador += 1
-    
-    ´poiuytd
+soma = 0
+numero = int(input("digite o primeiro numero"))
+numero2 = int(input("digite segundo numero"))
+
+while numero != 0:
+    numero = int(input("Digite um número: "))
+    soma = soma + numero + numero2
+    print("a soma é:", soma)
