@@ -1,4 +1,5 @@
-from expoo import Pessoa
+from Pessoa import Pessoa
 
 
-pessoa = Pessoa(nome, idade)
+pessoa = Pessoa("julia", 16)
+pessoa.apresentar()
