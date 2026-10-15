@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block titulo_pagina %}Excluir nota | Sistema de Notas{% endblock %}
+{% block conteudo %}
+<div class="row justify-content-center"><div class="col-12 col-lg-7"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+  <h1 class="h3 text-danger">Confirmar exclusão</h1><p>Tem certeza de que deseja excluir esta nota?</p>
+  <div class="alert alert-light border"><strong>Aluno:</strong> {{ nota.aluno }}<br><strong>Turma:</strong> {{ nota.turma }}<br><strong>Disciplina:</strong> {{ nota.disciplina }}<br><strong>Nota:</strong> {{ nota.nota|floatformat:1 }}</div>
+  <form method="post">{% csrf_token %}<button type="submit" class="btn btn-danger">Sim, excluir</button> <a href="{% url 'lista_notas' %}" class="btn btn-outline-secondary">Cancelar</a></form>
+</div></div></div></div>
+{% endblock %}
